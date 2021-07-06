@@ -47,36 +47,28 @@ a {
    
 
 .content {
+    position:absolute;
     text-align: center;
     color: rgb(255, 255, 255); 
-    width: 100%;
+    width: 100vw;
+    height:100vh
    
   }
 
 .title {
     -webkit-text-stroke: 2px black;
 }
-.meet {
-    position: relative;
-    margin: 0 auto;
-    width: 4rem;
-    font-weight: bold;
-    font-size: 200px;
-    color: rgba(194, 175, 8, 0.863);
-
-}
 
 
   .storm{
-    shape-image-threshold: inherit;
-    object-fit: cover;
+    object-fit:contain;
     position: relative;
     height:auto;
-    height: 35vh;
+    height: 50vh;
     width: 100vw;
+    max-width: 2000px;
   }
-
-  .image {
- 
- background-image: url("http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd");
+  footer {
+      padding: 1px;
+      background-color: rgb(255, 198, 41);
   }

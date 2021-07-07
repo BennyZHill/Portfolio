@@ -78,18 +78,18 @@ button {
     text-align: center;
     margin-top: 0;
     font-family: 'Nanum Myeongjo', serif;
-    color: #a20b5b;
+    color: #000000;
     text-decoration: none;
     background: none;
     border: none;
     transition: 1s;
     transform: ease;
-    filter: blur(3px);
+    /* filter: blur(3px); */
  
     
 }
 button:hover {
-    filter: blur(0);
+    /* filter: blur(0); */
     border-radius: 10%;
     color: white;
     background-color: black;

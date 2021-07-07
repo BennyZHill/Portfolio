@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Encode Sans SC', sans-serif;
+    background: linear-gradient( #ffffff 70%, #d3d3d3);
+
+}
+.NavLinks {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+a {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: grey;
+    padding: .75em;
+    transition: .75s;
+    filter: blur(2px);
+    transition: 1s;
+    transform: ease;
+}
+a:hover {
+    color:black;
+    text-shadow: grey;
+    filter: blur(0);
+}
+    
+ 
+    image {
+        width: 100%;
+    }
+
+.nav-container {
+    background:#ffffff;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+.logo {
+    color: #d3d3d3;
+    font-weight: bold;
+}
+
+.FrontPage {
+    color: #d3d3d3;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+.social-header {
+    display: none;
+}
+
+.title {
+    font-size: 2em;
+    margin-top: 2em;
+}
+.title, h1 {
+    margin-bottom: 2%;
+     letter-spacing: .2em;
+    color: black;
+}
+button {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #a20b5b;
+    text-decoration: none;
+    background: none;
+    border: none;
+    transition: 1s;
+    transform: ease;
+    filter: blur(3px);
+ 
+    
+}
+button:hover {
+    filter: blur(0);
+    border-radius: 10%;
+    color: white;
+    background-color: black;
+    
+}

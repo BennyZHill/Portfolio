@@ -5,7 +5,9 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background: linear-gradient(#000000, #434343); 
+  /* background: linear-gradient(#000000, #434343);  */
+  background: linear-gradient( #bdc3c7, #2c3e50);
+
 }
 h1 {
     font-family: 'Righteous', cursive;
@@ -18,11 +20,25 @@ ul {
     font-size: 1rem;
 }
 a {
-    text-decoration: none;
+    font-size: 1em;
+    text-decoration:none;
+    text-transform:uppercase;
 }
 
 .nav-container {
-    background:  rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(10, 255, 243, 0.418),rgba(59, 97, 138, 0));
+
+}
+.nav-container2{
+    background-image: linear-gradient(rgba(133, 250, 0, 0.418),rgba(22, 18, 18, 0));
+
+}
+.nav-container3 {
+    background-image: linear-gradient(rgba(252, 235, 2, 0.418),rgba(22, 18, 18, 0));
+
+}
+.nav-container4 {
+    background-image: linear-gradient(rgba(247, 2, 2, 0.418),rgba(22, 18, 18, 0));
 
 }
 .nav-container, a {
@@ -45,37 +61,30 @@ a {
     display: block;
     padding: 0 2em;
 }
-   
 
-.content {
-    position: absolute;
+.indexTitle {
+    font-family:'Teko';
     text-align: center;
-    color: rgb(255, 255, 255); 
-    width: 100vw;
-    height:100vh;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-transform:uppercase;
+}
+.hireTitle {
+    font-family:'Teko';
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-transform:uppercase;
+}
+.projectTitle {
+    font-family:'Teko';
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-transform:uppercase;
+}
 
+.workTitle{
+    font-family:'Teko';
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-transform:uppercase;
+}
    
-  }
-
-.title {
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: black;
-    font-family: 'Teko', sans-serif;
-    font-size: 8em;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-
-
-  .storm {
-      margin-top: 2px;
-   object-fit: cover;
-    position: relative;
-    height:auto;
-    height:30vh;
-    width: 100vw;
-}
-
-  

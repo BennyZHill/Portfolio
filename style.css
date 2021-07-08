@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Encode Sans SC', sans-serif;
     background: linear-gradient( #ffffff 70%, #d3d3d3);
+    cursor:none
 
 }
 .NavLinks {

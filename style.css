@@ -10,85 +10,7 @@ body {
     font-family: 'Encode Sans SC', sans-serif;
     background: linear-gradient( #ffffff 70%, #d3d3d3);
 }
-.preLoader {
-    height: 100vh;
-    width: 100%;
-    background-color: #ebe6e6;
-    position: fixed;
-    z-index: 1;
-}
 
-
-.loading {
-    color:rgb(0, 0, 0);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    right: 10%;
-    top: 50%;
-    font-family:'Encode Sans SC';
-    letter-spacing: 2em;
-    font-size: 3em;
-}
-.loadingSub {
-    color: rgb(0, 0, 0);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    right: 10%;
-    top: 62%;
-    font-family:'Encode Sans SC';
-    letter-spacing: 1em;
-    font-size: 3em;
-    text-align: center;
-}
-.loadingBar {
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    overflow: hidden;
-    top: 60%;
-    background-color: white;
-    position: absolute;
-}
-.loadingBar:before{
-    position: absolute;
-    content: "";
-    left: -200px;
-    width: 200px;
-    height: 4px;
-    background-color: rgb(255, 11, 182);
-    -webkit-animation: loader 4s linear infinite;
-    animation: loader 4s linear infinite;
-}
-@-webkit-keyframes loader {
-    from{left: -200px; width: 30%;}
-    50% {width: 20%;}
-    70% {width: 70%;}
-    80% {left: 50%;}
-    90% {left: 120%;}
-    to {left: 100%;}
-}
-@-webkit-keyframes loader {
-    from{left: -200px; width: 30%;}
-    50% {width: 20%;}
-    70% {width: 70%;}
-    80% {left: 50%;}
-    90% {left: 120%;}
-    to {left: 100%;}
-}
-
- .loadingBar:after {
-     display: none;
- }   
-.finishedLoading {
-    animation-delay: 4s;
-    animation: fadeOut 3s;
-}
-@keyframes fadeOut{
-  0% {opacity: 100%;}
-  100%{opacity: 0%;}  
-}
 
 .NavLinks {
     display: flex;
@@ -138,10 +60,16 @@ header {
 }
 
 .FrontPage {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 10%;
+    top: 50%;
     color: #d3d3d3;
     display: grid;
     text-align: center;
     padding: 4em;
+    
 }
 .social-header {
     display: none;
@@ -150,11 +78,14 @@ header {
 .title {
     font-size: 2em;
     margin-top: 2em;
+    letter-spacing: 2rem;
 }
 .title, h1 {
     margin-bottom: 2%;
-     letter-spacing: .2em;
     color: black;
+}
+h1 {
+    letter-spacing: 2em;
 }
 button {
     font-size: 3rem;

@@ -65,13 +65,30 @@ header {
     height: 100vh;
     width: 100%;
     display: flex;
+    align-items: center;
+}
+.projects{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+.proj1, .proj2, .proj3, .proj4 {
+    height: 50px;
+    width: 50px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
 }
 
 .pTitle {
- 
-    right: 45%;
-    top: 30%;
+    bottom: 10%;
+    right: 28%;
     font-size: 4rem;
     position: relative;
     letter-spacing: .5em;

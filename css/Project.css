@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+body {
+    padding: 0px;
+    height: 100vh;
+    margin: 0;
+    font-family:'Ultra', 'Encode Sans SC', sans-serif;
+    background: linear-gradient( #ffffff 70%, #d3d3d3);
+}
+
+
+.NavLinks {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+a {
+    position: relative;
+    font-size: 1em;
+    display: flex;
+    text-decoration: none;
+    color:#d3d3d3;
+    padding: .75em;
+    transition: .5s;
+    transform: ease;
+}
+a:hover {
+    color:white;
+    -webkit-text-stroke: 1px rgb(255, 11, 182);;
+    font-size: 1.7rem;
+}
+    
+ 
+    image {
+        width: 100%;
+    }
+
+.nav-container {
+    background:#ffffff;
+    
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+.logo {
+    color: #d3d3d3;
+    font-weight: bold;
+}
+.ProjectPage{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+
+.pTitle {
+ 
+    right: 45%;
+    top: 30%;
+    font-size: 4rem;
+    position: relative;
+    letter-spacing: .5em;
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    transform: rotate(-90deg);
+}
+

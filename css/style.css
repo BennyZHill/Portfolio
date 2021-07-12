@@ -2,22 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-
+* {
+    cursor: none;
+}
 body {
     padding: 0px;
     height: 100vh;
     margin: 0;
     font-family:'Ultra', 'Encode Sans SC', sans-serif;
     background: linear-gradient( #ffffff 70%, #d3d3d3);
+    cursor: none;
+   
 }
-
-
 .NavLinks {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding:0;
+    text-decoration: none;
+
+    
 }
 a {
     position:initial;
@@ -29,12 +34,15 @@ a {
     padding: .75em;
     transition: .5s;
     transform: ease;
+   
+    
 }
 a:hover {
     color:white;
     -webkit-text-stroke: 1px rgb(255, 11, 182);;
     filter: blur(0);
     font-size: 1.8rem;
+   
 }
     
  
@@ -44,7 +52,7 @@ a:hover {
 
 .nav-container {
     background:#ffffff;
-
+  
 }
 
 header {
@@ -52,6 +60,7 @@ header {
     justify-content: space-between;
     padding: 2em;
     font-size: 1.5rem;
+    
 }
 .logo {
     color: #d3d3d3;
@@ -112,7 +121,30 @@ button:hover{
  filter: blur(0); 
     border-radius: 10%;
     color: rgb(255, 11, 182);
-    background-color: rgb(255, 255, 255);
-    content:none;
-    
+    background-color: rgb(255, 255, 255);    
 } 
+
+
+
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 2;
+
+
+}
+.link-grow {
+    transform: scale(3);
+    background: black;
+}
+.hovered-link{
+    color: white;
+}

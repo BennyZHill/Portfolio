@@ -127,9 +127,9 @@ button:hover{
 
 
 .cursor {
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid black;
+    width: .75rem;
+    height: .75rem;
+    border: 2px solid #505050;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -139,11 +139,11 @@ button:hover{
     transform-origin: 100% 100%;
     z-index: 2;
 
-
 }
 .link-grow {
     transform: scale(3);
     background: black;
+    border: 200px red solid;
 }
 .hovered-link{
     color: white;

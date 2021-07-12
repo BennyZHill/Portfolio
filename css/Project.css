@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-
+*{
+    cursor: none;
+}
 body {
     padding: 0px;
     height: 100vh;
     margin: 0;
     font-family:'Ultra', 'Encode Sans SC', sans-serif;
     background: linear-gradient( #ffffff 70%, #d3d3d3);
+    cursor: none;
 }
 
 
@@ -76,4 +79,26 @@ header {
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     transform: rotate(-90deg);
 }
+.cursor {
+    width: .75rem;
+    height: .75rem;
+    border: 2px solid #505050;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 2;
 
+
+}
+.link-grow {
+    transform: scale(3);
+    background: black;
+    border: 200px red solid;
+}
+.hovered-link{
+    color: white;
+}

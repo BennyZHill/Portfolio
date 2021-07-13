@@ -34,14 +34,15 @@ a {
     padding: .75em;
     transition: .5s;
     transform: ease;
+    transform-origin: 100% 100%;
    
     
 }
 a:hover {
     color:white;
-    -webkit-text-stroke: 1px rgb(255, 11, 182);;
+    -webkit-text-stroke: 1px rgba(250, 1, 1, 0.801);
     filter: blur(0);
-    font-size: 1.8rem;
+    transform: scale(1.1);
    
 }
     
@@ -99,7 +100,7 @@ h1 {
 
 }
 button {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: -2rem;
     font-family: 'Nanum Myeongjo', serif;
@@ -110,8 +111,7 @@ button {
     transition: 1s;
     transform: ease;
     filter: blur(3px); 
-    
-    justify-content: center;
+    justify-content: space-around;
  
     
 }
@@ -119,8 +119,7 @@ button {
 button:hover{
     font-family: 'Nanum Myeongjo', 'Encode Sans SC', serif;
  filter: blur(0); 
-    border-radius: 10%;
-    color: rgb(255, 11, 182);
+    color: rgba(250, 1, 1, 0.801);
     background-color: rgb(255, 255, 255);    
 } 
 
@@ -139,12 +138,4 @@ button:hover{
     transform-origin: 100% 100%;
     z-index: 2;
 
-}
-.link-grow {
-    transform: scale(3);
-    background: black;
-    border: 200px red solid;
-}
-.hovered-link{
-    color: white;
 }

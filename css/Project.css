@@ -12,9 +12,17 @@ body {
     background: linear-gradient( #ffffff 70%, #d3d3d3);
     cursor: none;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 
+}
 
 .NavLinks {
+    grid-column: 1/2;
+    grid-row: 2/2;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -30,11 +38,12 @@ a {
     padding: .75em;
     transition: .5s;
     transform: ease;
+    transform-origin: 100% 100%;
 }
 a:hover {
     color:white;
-    -webkit-text-stroke: 1px rgb(255, 11, 182);;
-    font-size: 1.7rem;
+    -webkit-text-stroke: 1px rgba(250, 1, 1, 0.801);
+    transform: scale(1.1);
 }
     
  
@@ -44,8 +53,8 @@ a:hover {
 
 .nav-container {
     background:#ffffff;
-    
-
+    grid-column: 2;
+    grid-column: 1;
 }
 
 header {
@@ -60,6 +69,8 @@ header {
     font-weight: bold;
 }
 .ProjectPage{
+    grid-column: 1;
+    grid-row: 2;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -68,6 +79,8 @@ header {
     align-items: center;
 }
 .projects{
+    grid-column: 2;
+    grid-row: 2;
     height: 200px;
     width: 200px;
     display: flex;
@@ -107,15 +120,7 @@ header {
     transition: all 0.3s ease;
     transition-property: background, transform;
     transform-origin: 100% 100%;
-    z-index: 2;
+    z-index: 1;
 
 
-}
-.link-grow {
-    transform: scale(3);
-    background: black;
-    border: 200px red solid;
-}
-.hovered-link{
-    color: white;
 }
